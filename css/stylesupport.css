@@ -1,0 +1,125 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';  
+      
+}
+main{
+    background-color: #f3f3f3;
+    color: rgb(86, 85, 85);
+}
+footer{
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    background-color: #e6e6e6;
+    color: rgb(86, 85, 85);
+}
+.alink{
+    text-decoration: none;
+    color: #4177aa;
+    font-weight: normal;
+    text-align: right;
+}
+.divbox{
+    color: white;
+    background-color:  #374777;
+    box-sizing: border-box;
+    padding: 55px;
+    text-align: center;
+    font-weight: normal;
+}
+.firstmenu{
+    text-align: left;
+    color: black;
+}
+.topmenu{
+    text-align: right;
+    margin-top: 5px;
+}
+.topmenu li{
+    display: inline;
+    padding: 10px;
+}
+.topmenu li>a{
+    font-size: 13px;
+    color: rgb(86, 85, 85);
+    text-decoration: none;
+}
+.divcolumn{
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.vl{
+    border-left: 1px solid black;
+}
+.vlcol{
+    border-left: 2px solid #e6e6e6;
+    height: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 1px; 
+}
+.text{
+    text-align: justify;
+    color: rgb(86, 85, 85);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text1{
+    color:  #a29e9e;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #a29e9e;
+}
+.button{
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+.button:hover {
+    border: 1px solid #374777;
+    color: white;
+}
+input[type=image] {
+    width: 100%;
+    padding-right: 220px;
+    padding-left: 220px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 50px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+}
+input[type=submit]{
+    width: 100%;
+}
+.hinput{
+    display: flex;
+    flex-direction: row;
+    font-size: 10pt;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.hinput:before,
+.hinput:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px dotted #e6e6e6;
+    margin: auto;
+}
