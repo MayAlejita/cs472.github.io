@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4 - WebForm2</title>
+    <link rel="stylesheet" href="../css/webform1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/cerulean/bootstrap.min.css"
+        integrity="sha512-1rXsIsq9uaj3bxRth2+Mw1slRDxuPzGlfJ8PaLmkO3/OtvCL7jVQrdxaC1VvCmCzKRMdKu0pmbCtqQz/3/xORA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid navOuter">
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto navItem">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">MUM Golden Dome Market : : : SRM System</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link vl" href="#">&nbsp;&nbsp;&nbsp;Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link vl" href="#">&nbsp;&nbsp;&nbsp;Suppliers</a>
+                        </li>
+                    </ul>
+                    <div class="navButton">
+                        <span id="spanColor">Hello!</span>
+                        <button class="btn btn-secondary my-2 my-sm-0" id="buttonColor" type="submit">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+            <fieldset>
+                <legend><strong>New Product Form</strong></legend>
+            </fieldset>
+            <div class="col">
+                <div class="form-group">
+                    <label>Product Number</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Unit Price</label>
+                    <input type="text" class="form-control" placeholder="0.0">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label>Quantity in stock</label>
+                    <input type="text" class="form-control" placeholder="0">
+                </div>
+                <div class="form-group">
+                    <label>Supplier:</label>
+                    <select class="form-select select" id="exampleSelect2">
+                        <option class="selectOption">Select a supplier</option>
+                        <option class="selectOption">Supplier 1</option>
+                        <option class="selectOption">Supplier 2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Date supplied</label>
+                    <input type="text" class="form-control" placeholder="yyyy-mm-dd">
+                    <small id="textHelp" class="form-text text-muted small">Enter a valid Date.</small>
+                </div>
+                <div id="divPos">
+                    <button type="button" class="btn btn-outline-info">Reset</button>
+                    <button type="button" class="btn btn-outline-danger">Cancel</button>
+                    <button type="button" class="btn btn-outline-primary">Add Product</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <hr>
+        &copy;2023 MIU
+        <br>
+        <a href="../index.html">Home</a>
+        <br>
+        <a href="https://validator.w3.org/check?url=https://mayalejita.github.io/cs472.github.io/lab4/webform2.html">
+            <img src="../img/w3c-html5-logo.png" alt="Validator">
+        </a>
+        <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https://mayalejita.github.io/cs472.github.io/css/webform1.css">
+            <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS">
+        </a>
+    </footer>
+</body>
+
+</html>
