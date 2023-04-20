@@ -34,12 +34,12 @@ console.log(newStudent1.computeAverageGrade());
 
 let students = [student1, newStudent, newStudent1];
 let count = 0;
-let computeAllAverage = students.flatMap(g => g.grades)
+let computeAllAverage1 = students.flatMap(g => g.grades)
                             .reduce((x, y) =>{ 
                                 count ++;
                                 return x + y
                             }, 0)/count;
-console.log("Average ObjectLiteral: " + computeAllAverage);
+console.log("Average ObjectLiteral: " + computeAllAverage1);
 
 ////////////////////////////////////////////////////
 
