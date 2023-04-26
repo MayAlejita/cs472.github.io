@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/united/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-bzjLLgZOhgXbSvSc5A9LWWo/mSIYf7U7nFbmYIB2Lgmuiw3vKGJuu+abKoaTx4W6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styleclient.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="body">
+    <header>
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a style="padding-right: 2em;" class="navbar-brand" href="index.html">Logo</a>
+            <div class="col-md-6" id="login">
+                <div class="form-group">Username:
+                    <input type="text" name="username" id="username" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">Password:&nbsp;
+                    <input type="text" name="password" id="password" placeholder="Enter password" required>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <form class="d-flex">
+                    <p id="welcomeMsg">
+                        <p class="updateV" id="userMsg"></p>
+                    </p>
+                    <button class="btn btn-secondary my-2 my-sm-0" id="loginBtn" type="button">Login</button>
+                    <button class="btn btn-secondary my-2 my-sm-0 updateV" id="logoutBtn" type="button">Logout</button>
+                    <p id="errorMsg"></p>
+                </form>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+    </header>
+    <main>
+        <div id="divPrincipal">
+            <h3>Welcome to my Store</h3>
+        </div>
+        <div class="updateV" id="main-content">
+            <div id="divProducts">
+                <h3>Product List</h3>
+                <div style="margin-top: 1em;" id="divProductList" style="font-size: 1em">
+                    <table class="table table-hover" id="mytable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Stock</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyProductList">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <h3>Your shopping cart</h3>
+            </div>
+            <div id="divMsgShoppingcart">
+                <h3>There is no item in your shopping cart!</h3>
+            </div>
+            <div class="updateV" id="divShoppingcart">
+                <div style="margin-top: 1em;" id="divShoppingcartList" style="font-size: 1em">
+                    <table class="table table-hover" id="mytable1">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyShoppingList">
+                            <tr id="trTotal"><td></td><td></td><td>TOTAL</td><td id="idTotal"></td></tr>  
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div style="text-align: right;" class="col-md-12">
+                        <button style="margin-left: 1em; padding: .5em 4em;" id="btnPlaceOrder" type="button" 
+                            class="btn btn-primary btn-inline">Place order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
