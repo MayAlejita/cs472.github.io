@@ -12,5 +12,6 @@ module.exports = class User{
 
 let dbUser = [
     {id: 1, username: 'John', password: '111'},
-    {id: 2, username: 'Edward', password: '222'}
+    {id: 2, username: 'Edward', password: '222'},
+    {id: 2, username: 'Anna', password: '333'}
 ];

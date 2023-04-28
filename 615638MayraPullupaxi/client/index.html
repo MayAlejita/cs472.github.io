@@ -16,13 +16,15 @@
     <header>
         <!-- Start Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a style="padding-right: 2em;" class="navbar-brand" href="index.html">Logo</a>
-            <div class="col-md-6" id="login">
+            <a style="padding-right: 2em;" class="navbar-brand" href="index.html">
+                <img src="https://w7.pngwing.com/pngs/181/973/png-transparent-pizza-man-illustration-pizza-steve-belly-bag-drawing-pizza-hut-uncle-food-vehicle-shoe-thumbnail.png" style="width:80px;height:60px;">
+            </a>
+            <div class="center col-md-6" id="login">
                 <div class="form-group">Username:
                     <input type="text" name="username" id="username" placeholder="Enter username" required>
                 </div>
                 <div class="form-group">Password:&nbsp;
-                    <input type="text" name="password" id="password" placeholder="Enter password" required>
+                    <input type="password" name="password" id="password" placeholder="Enter password" required>
                 </div>
             </div>
             <div class="collapse navbar-collapse" id="navbarColor01">
@@ -30,8 +32,8 @@
                     <p id="welcomeMsg">
                         <p class="updateV" id="userMsg"></p>
                     </p>
-                    <button class="btn btn-secondary my-2 my-sm-0" id="loginBtn" type="button">Login</button>
-                    <button class="btn btn-secondary my-2 my-sm-0 updateV" id="logoutBtn" type="button">Logout</button>
+                    <button class="right btn btn-secondary my-2 my-sm-0" id="loginBtn" type="button">Login</button>
+                    <button class="right btn btn-secondary my-2 my-sm-0 updateV" id="logoutBtn" type="button">Logout</button>
                     <p id="errorMsg"></p>
                 </form>
             </div>
@@ -39,14 +41,14 @@
         <!-- End Navbar -->
     </header>
     <main>
-        <div id="divPrincipal">
-            <h3>Welcome to my Store</h3>
+        <div class="center-text" id="divPrincipal">
+            <h3 class="bold-label">Welcome to my Store</h3>
         </div>
         <div class="updateV" id="main-content">
             <div id="divProducts">
-                <h3>Product List</h3>
-                <div style="margin-top: 1em;" id="divProductList" style="font-size: 1em">
-                    <table class="table table-hover" id="mytable">
+                <h3 class="margins bold-label">Product List</h3>
+                <div class="margins" id="divProductList" style="font-size: 1em">
+                    <table class="table table-hover" style="border: 1px solid black" id="mytable">
                         <thead>
                             <tr>
                                 <th scope="col">Name</th>
@@ -62,14 +64,14 @@
                 </div>
             </div>
             <div>
-                <h3>Your shopping cart</h3>
+                <h3 class="margins bold-label">Your shopping cart</h3>
             </div>
             <div id="divMsgShoppingcart">
-                <h3>There is no item in your shopping cart!</h3>
+                <h3 class="margins">There is no item in your shopping cart!</h3>
             </div>
             <div class="updateV" id="divShoppingcart">
-                <div style="margin-top: 1em;" id="divShoppingcartList" style="font-size: 1em">
-                    <table class="table table-hover" id="mytable1">
+                <div class="margins" id="divShoppingcartList" style="font-size: 1em">
+                    <table class="table table-hover" style="border: 1px solid black" id="mytable1">
                         <thead>
                             <tr>
                                 <th scope="col">Name</th>
@@ -79,13 +81,13 @@
                             </tr>
                         </thead>
                         <tbody id="tbodyShoppingList">
-                            <tr id="trTotal"><td></td><td></td><td>TOTAL</td><td id="idTotal"></td></tr>  
+                            <tr id="trTotal"><td></td><td></td><td>TOTAL</td><td id="idTotal"></td></tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="row">
                     <div style="text-align: right;" class="col-md-12">
-                        <button style="margin-left: 1em; padding: .5em 4em;" id="btnPlaceOrder" type="button" 
+                        <button style="margin-right: 150px; padding: .5em 4em;" id="btnPlaceOrder" type="button"
                             class="btn btn-primary btn-inline">Place order</button>
                     </div>
                 </div>

@@ -4,15 +4,12 @@ module.exports = class Shoppingcart{
     constructor(username, quantity, total, id, nameProd, price, image, stock){
         this.username = username;
         this.quantity = quantity;
-        this.total = total;
-        
+        this.total = total;    
         this.id = id;
-
         this.nameProd = nameProd;
         this.price = price;
         this.image = image;
         this.stock = stock;
-        // this.product = new Product(id, nameProd, price, image, stock);
     }
 
     save(id, user){

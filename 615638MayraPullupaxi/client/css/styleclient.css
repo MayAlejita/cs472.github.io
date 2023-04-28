@@ -1,3 +1,35 @@
 .updateV{
     visibility: hidden;
 }
+
+button.right {
+    position: absolute;
+    right: 10px;
+}
+
+.center {
+    position: center;
+    left: 400px;
+}
+
+.bold-label {
+    font-weight:bold;
+    font-size: 50px;
+}
+
+div.center-text {
+    text-align: center;
+}
+
+.margins {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.input-width {
+    width: 30px;
+}
+
+.no-border-button {
+    border: none;
+}
